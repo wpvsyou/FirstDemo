@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 22.6.2">
+
+    <issue
+        id="Assert"
+        severity="Warning"
+        message="Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead."
+        category="Correctness"
+        priority="6"
+        summary="Looks for usages of the assert keyword"
+        explanation="Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (`adb shell setprop debug.assert 1`), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside `if (BuildConfig.DEBUG) { }` blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.
+
+For example, you can replace `assert speed > 0` with `if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }`.
+
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)"
+        url="https://code.google.com/p/android/issues/detail?id=65183"
+        urls="https://code.google.com/p/android/issues/detail?id=65183"
+        errorLine1="        assert this.decrypters.containsKey(&quot;Identity&quot;) :"
+        errorLine2="        ^">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/decrypt/CryptFilterDecrypter.java"
+            line="67"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Assert"
+        severity="Warning"
+        message="Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead."
+        category="Correctness"
+        priority="6"
+        summary="Looks for usages of the assert keyword"
+        explanation="Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (`adb shell setprop debug.assert 1`), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside `if (BuildConfig.DEBUG) { }` blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.
+
+For example, you can replace `assert speed > 0` with `if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }`.
+
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)"
+        url="https://code.google.com/p/android/issues/detail?id=65183"
+        urls="https://code.google.com/p/android/issues/detail?id=65183"
+        errorLine1="        assert v >= 4 : &quot;crypt filter decrypter not supported for &quot; +"
+        errorLine2="        ^">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/decrypt/PDFDecrypterFactory.java"
+            line="151"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Assert"
+        severity="Warning"
+        message="Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead."
+        category="Correctness"
+        priority="6"
+        summary="Looks for usages of the assert keyword"
+        explanation="Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (`adb shell setprop debug.assert 1`), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside `if (BuildConfig.DEBUG) { }` blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.
+
+For example, you can replace `assert speed > 0` with `if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }`.
+
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)"
+        url="https://code.google.com/p/android/issues/detail?id=65183"
+        urls="https://code.google.com/p/android/issues/detail?id=65183"
+        errorLine1="        assert objNum >= OBJ_NUM_TRAILER;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFObject.java"
+            line="555"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Assert"
+        severity="Warning"
+        message="Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead."
+        category="Correctness"
+        priority="6"
+        summary="Looks for usages of the assert keyword"
+        explanation="Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (`adb shell setprop debug.assert 1`), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside `if (BuildConfig.DEBUG) { }` blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.
+
+For example, you can replace `assert speed > 0` with `if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }`.
+
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)"
+        url="https://code.google.com/p/android/issues/detail?id=65183"
+        urls="https://code.google.com/p/android/issues/detail?id=65183"
+        errorLine1="        assert objGen >= OBJ_NUM_TRAILER;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFObject.java"
+            line="556"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Assert"
+        severity="Warning"
+        message="Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead."
+        category="Correctness"
+        priority="6"
+        summary="Looks for usages of the assert keyword"
+        explanation="Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (`adb shell setprop debug.assert 1`), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside `if (BuildConfig.DEBUG) { }` blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.
+
+For example, you can replace `assert speed > 0` with `if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }`.
+
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)"
+        url="https://code.google.com/p/android/issues/detail?id=65183"
+        urls="https://code.google.com/p/android/issues/detail?id=65183"
+        errorLine1="            assert v.length == 16;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/decrypt/StandardDecrypter.java"
+            line="585"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="Assert"
+        severity="Warning"
+        message="Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead."
+        category="Correctness"
+        priority="6"
+        summary="Looks for usages of the assert keyword"
+        explanation="Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (`adb shell setprop debug.assert 1`), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside `if (BuildConfig.DEBUG) { }` blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.
+
+For example, you can replace `assert speed > 0` with `if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }`.
+
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)"
+        url="https://code.google.com/p/android/issues/detail?id=65183"
+        urls="https://code.google.com/p/android/issues/detail?id=65183"
+        errorLine1="        assert pwvalue.length == 32;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/decrypt/StandardDecrypter.java"
+            line="640"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Assert"
+        severity="Warning"
+        message="Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead."
+        category="Correctness"
+        priority="6"
+        summary="Looks for usages of the assert keyword"
+        explanation="Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (`adb shell setprop debug.assert 1`), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside `if (BuildConfig.DEBUG) { }` blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.
+
+For example, you can replace `assert speed > 0` with `if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }`.
+
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)"
+        url="https://code.google.com/p/android/issues/detail?id=65183"
+        urls="https://code.google.com/p/android/issues/detail?id=65183"
+        errorLine1="        assert calculatedUValue.length == 32;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/decrypt/StandardDecrypter.java"
+            line="820"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        severity="Warning"
+        message="Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead"
+        category="Correctness"
+        priority="6"
+        summary="Finds calls to locale-ambiguous `String` manipulation methods"
+        explanation="Calling `String#toLowerCase()` or `#toUpperCase()` *without specifying an explicit locale* is a common source of bugs. The reason for that is that those methods will use the current locale on the user&apos;s device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for `i` is *not* `I`.
+
+If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
+        url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        errorLine1="   else if(fName.substring(fName.lastIndexOf(&quot;.&quot;) + 1, fName.length()).toLowerCase().equals(&quot;pdf&quot;))"
+        errorLine2="                                                                       ~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/activitysrc/net/sf/andpdf/pdfviewer/MyAdapter.java"
+            line="107"
+            column="72"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        severity="Warning"
+        message="Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead"
+        category="Correctness"
+        priority="6"
+        summary="Finds calls to locale-ambiguous `String` manipulation methods"
+        explanation="Calling `String#toLowerCase()` or `#toUpperCase()` *without specifying an explicit locale* is a common source of bugs. The reason for that is that those methods will use the current locale on the user&apos;s device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for `i` is *not* `I`.
+
+If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
+        url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        errorLine1="        else if (fName.substring(fName.lastIndexOf(&quot;.&quot;) + 1, fName.length()).toLowerCase().equals(&quot;pdf&quot;))"
+        errorLine2="                                                                             ~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/activitysrc/net/sf/andpdf/pdfviewer/PdfFileSelectActivity.java"
+            line="189"
+            column="78"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        severity="Warning"
+        message="Field requires API level 5 (current min is 3): android.view.MotionEvent#ACTION_MASK"
+        category="Correctness"
+        priority="6"
+        summary="Finds inlined fields that may or may not work on older platforms"
+        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.
+
+If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `AndroidManifest.xml` file.
+If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
+"
+        errorLine1="        switch (event.getAction() &amp; MotionEvent.ACTION_MASK) {"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/activitysrc/util/DragImageView.java"
+            line="95"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        severity="Error"
+        message="Call requires API level 5 (current min is 3): android.view.MotionEvent#getPointerCount"
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in all targeted API versions"
+        explanation="This check scans through all the Android API calls in the application and warns about any calls that are not available on *all* versions targeted by this application (according to its minimum SDK attribute in the manifest).
+
+If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `AndroidManifest.xml` file.
+If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
+
+If you are deliberately setting `android:` attributes in style definitions, make sure you place this in a `values-v11` folder in order to avoid running into runtime conflicts on certain devices where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.
+
+Similarly, you can use tools:targetApi=&quot;11&quot; in an XML file to indicate that the element will only be inflated in an adequate context."
+        errorLine1="        if (event.getPointerCount() == 2) {"
+        errorLine2="                  ~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/activitysrc/util/DragImageView.java"
+            line="133"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        severity="Error"
+        message="Call requires API level 5 (current min is 3): android.view.MotionEvent#getX"
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in all targeted API versions"
+        explanation="This check scans through all the Android API calls in the application and warns about any calls that are not available on *all* versions targeted by this application (according to its minimum SDK attribute in the manifest).
+
+If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `AndroidManifest.xml` file.
+If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
+
+If you are deliberately setting `android:` attributes in style definitions, make sure you place this in a `values-v11` folder in order to avoid running into runtime conflicts on certain devices where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.
+
+Similarly, you can use tools:targetApi=&quot;11&quot; in an XML file to indicate that the element will only be inflated in an adequate context."
+        errorLine1="        float x = event.getX(0) - event.getX(1);"
+        errorLine2="                        ~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/activitysrc/util/DragImageView.java"
+            line="193"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        severity="Error"
+        message="Call requires API level 5 (current min is 3): android.view.MotionEvent#getY"
+        category="Correctness"
+        priority="6"
+        summary="Finds API accesses to APIs that are not supported in all targeted API versions"
+        explanation="This check scans through all the Android API calls in the application and warns about any calls that are not available on *all* versions targeted by this application (according to its minimum SDK attribute in the manifest).
+
+If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `AndroidManifest.xml` file.
+If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
+
+If you are deliberately setting `android:` attributes in style definitions, make sure you place this in a `values-v11` folder in order to avoid running into runtime conflicts on certain devices where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.
+
+Similarly, you can use tools:targetApi=&quot;11&quot; in an XML file to indicate that the element will only be inflated in an adequate context."
+        errorLine1="        float y = event.getY(0) - event.getY(1);"
+        errorLine2="                        ~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/activitysrc/util/DragImageView.java"
+            line="194"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="SdCardPath"
+        severity="Warning"
+        message="Do not hardcode &quot;/sdcard/&quot;; use Environment.getExternalStorageDirectory().getPath() instead"
+        category="Correctness"
+        priority="6"
+        summary="Looks for hardcoded references to `/sdcard`"
+        explanation="Your code should not reference the `/sdcard` path directly; instead use `Environment.getExternalStorageDirectory().getPath()`.
+
+Similarly, do not reference the `/data/data/` path directly; it can vary in multi-user scenarios. Instead, use `Context.getFilesDir().getPath()`."
+        url="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        urls="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal"
+        errorLine1="    public final static String DEFAULTPDFFILENAME = &quot;/sdcard/download/example.pdf&quot;;"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/activitysrc/net/sf/andpdf/pdfviewer/PdfFileSelectActivity.java"
+            line="33"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="ManifestOrder"
+        severity="Warning"
+        message="&lt;uses-sdk> tag appears after &lt;application> tag"
+        category="Correctness"
+        priority="5"
+        summary="Checks for manifest problems like `&lt;uses-sdk>` after the `&lt;application>` tag"
+        explanation="The &lt;application> tag should appear after the elements which declare which version you need, which features you need, which libraries you need, and so on. In the past there have been subtle bugs (such as themes not getting applied correctly) when the `&lt;application>` tag appears before some of these other elements, so it&apos;s best to order your manifest in the logical dependency order."
+        errorLine1="    &lt;uses-sdk android:minSdkVersion=&quot;3&quot; />"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/AndroidManifest.xml"
+            line="32"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Deprecated"
+        severity="Warning"
+        message="android:autoText is deprecated: Use inputType instead"
+        category="Correctness"
+        priority="2"
+        summary="Looks for usages of deprecated layouts, attributes, and so on."
+        explanation="Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You&apos;ve been warned."
+        errorLine1="        android:layout_width=&quot;fill_parent&quot; android:autoText=&quot;true&quot;"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="38"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Deprecated"
+        severity="Warning"
+        message="android:capitalize is deprecated: Use inputType instead"
+        category="Correctness"
+        priority="2"
+        summary="Looks for usages of deprecated layouts, attributes, and so on."
+        explanation="Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You&apos;ve been warned."
+        errorLine1="        android:capitalize=&quot;sentences&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="39"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        severity="Warning"
+        message="Avoid using &quot;px&quot; as units; use &quot;dp&quot; instead"
+        category="Correctness"
+        priority="2"
+        summary="Looks for use of the `px` dimension"
+        explanation="For performance reasons and to keep the code simpler, the Android system uses pixels as the standard unit for expressing dimension or coordinate values. That means that the dimensions of a view are always expressed in the code using pixels, but always based on the current screen density. For instance, if `myView.getWidth()` returns 10, the view is 10 pixels wide on the current screen, but on a device with a higher density screen, the value returned might be 15. If you use pixel values in your application code to work with bitmaps that are not pre-scaled for the current screen density, you might need to scale the pixel values that you use in your code to match the un-scaled bitmap source."
+        url="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        urls="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        errorLine1="     android:padding=&quot;5px&quot;"
+        errorLine2="     ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/file_explorer.xml"
+            line="13"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        severity="Warning"
+        message="Avoid using &quot;px&quot; as units; use &quot;dp&quot; instead"
+        category="Correctness"
+        priority="2"
+        summary="Looks for use of the `px` dimension"
+        explanation="For performance reasons and to keep the code simpler, the Android system uses pixels as the standard unit for expressing dimension or coordinate values. That means that the dimensions of a view are always expressed in the code using pixels, but always based on the current screen density. For instance, if `myView.getWidth()` returns 10, the view is 10 pixels wide on the current screen, but on a device with a higher density screen, the value returned might be 15. If you use pixel values in your application code to work with bitmaps that are not pre-scaled for the current screen density, you might need to scale the pixel values that you use in your code to match the un-scaled bitmap source."
+        url="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        urls="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        errorLine1="  &lt;Button android:id=&quot;@+id/btShow&quot; android:layout_width=&quot;120px&quot;  android:layout_height=&quot;40px&quot; android:text=&quot;Show&quot;>&lt;/Button>"
+        errorLine2="                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="32"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="PxUsage"
+        severity="Warning"
+        message="Avoid using &quot;px&quot; as units; use &quot;dp&quot; instead"
+        category="Correctness"
+        priority="2"
+        summary="Looks for use of the `px` dimension"
+        explanation="For performance reasons and to keep the code simpler, the Android system uses pixels as the standard unit for expressing dimension or coordinate values. That means that the dimensions of a view are always expressed in the code using pixels, but always based on the current screen density. For instance, if `myView.getWidth()` returns 10, the view is 10 pixels wide on the current screen, but on a device with a higher density screen, the value returned might be 15. If you use pixel values in your application code to work with bitmaps that are not pre-scaled for the current screen density, you might need to scale the pixel values that you use in your code to match the un-scaled bitmap source."
+        url="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        urls="http://developer.android.com/guide/practices/screens_support.html#screen-independence"
+        errorLine1="  &lt;Button android:id=&quot;@+id/btExit&quot; android:layout_width=&quot;120px&quot;  android:layout_height=&quot;40px&quot; android:text=&quot;Exit&quot;>&lt;/Button>"
+        errorLine2="                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="33"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="TrulyRandom"
+        severity="Warning"
+        message="Potentially insecure random numbers on Android 4.3 and older. Read https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html for more info."
+        category="Security"
+        priority="9"
+        summary="Looks for calls to JCA primitives that may be affected by SecureRandom vulnerability"
+        explanation="Key generation, signing, encryption, and random number generation may not receive cryptographically strong values due to improper initialization of the underlying PRNG on Android 4.3 and below.
+
+If your application relies on cryptographically secure random number generation you should apply the workaround described in https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html .
+
+This lint rule is mostly informational; it does not accurately detect whether cryptographically secure RNG is required, or whether the workaround has already been applied. After reading the blog entry and updating your code if necessary, you can disable this lint issue."
+        url="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html"
+        urls="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html"
+        errorLine1="        cipher.init(Cipher.ENCRYPT_MODE, key);"
+        errorLine2="               ~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/decrypt/StandardDecrypter.java"
+            line="984"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Looks for memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="            Paint paint = new Paint();"
+        errorLine2="                          ~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/activitysrc/net/sf/andpdf/pdfviewer/PdfViewerActivity.java"
+            line="323"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        severity="Warning"
+        message="This tag and its children can be replaced by one &lt;TextView/> and a compound drawable"
+        category="Performance"
+        priority="6"
+        summary="Checks whether the current node can be replaced by a `TextView` using compound drawables."
+        explanation="A `LinearLayout` which contains an `ImageView` and a `TextView` can be more efficiently handled as a compound drawable (a single TextView, using the `drawableTop`, `drawableLeft`, `drawableRight` and/or `drawableBottom` attributes to draw one or more images adjacent to the text).
+
+If the two widgets are offset from each other with margins, this can be replaced with a `drawablePadding` attribute.
+
+There&apos;s a lint quickfix to perform this conversion in the Eclipse plugin."
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/file_row.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UseSparseArrays"
+        severity="Warning"
+        message="Use new SparseArray&lt;String>(...) instead for better performance"
+        category="Performance"
+        priority="4"
+        summary="Looks for opportunities to replace HashMaps with the more efficient SparseArray"
+        explanation="For maps where the keys are of type integer, it&apos;s typically more efficient to use the Android `SparseArray` API. This check identifies scenarios where you might want to consider using `SparseArray` instead of `HashMap` for better performance.
+
+This is *particularly* useful when the value types are primitives like ints, where you can use `SparseIntArray` and avoid auto-boxing the values from `int` to `Integer`.
+
+If you need to construct a `HashMap` because you need to call an API outside of your control which requires a `Map`, you can suppress this warning using for example the `@SuppressLint` annotation."
+        errorLine1="        unicodeToGlyph = new HashMap&lt;Integer, String>(4500);"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/ttf/AdobeGlyphList.java"
+            line="76"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="UseSparseArrays"
+        severity="Warning"
+        message="Use new SparseArray&lt;SoftReference>(...) instead for better performance"
+        category="Performance"
+        priority="4"
+        summary="Looks for opportunities to replace HashMaps with the more efficient SparseArray"
+        explanation="For maps where the keys are of type integer, it&apos;s typically more efficient to use the Android `SparseArray` API. This check identifies scenarios where you might want to consider using `SparseArray` instead of `HashMap` for better performance.
+
+This is *particularly* useful when the value types are primitives like ints, where you can use `SparseIntArray` and avoid auto-boxing the values from `int` to `Integer`.
+
+If you need to construct a `HashMap` because you need to call an API outside of your control which requires a `Map`, you can suppress this warning using for example the `@SuppressLint` annotation."
+        errorLine1="        pages = Collections.synchronizedMap(new HashMap&lt;Integer,SoftReference>());"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/Cache.java"
+            line="40"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(codes[i]) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                                unicodeToGlyph.put(new Integer(codes[i]), glyphName);"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/ttf/AdobeGlyphList.java"
+            line="109"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(unicodes[0]) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="            return new Integer(unicodes[0]);"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/ttf/AdobeGlyphList.java"
+            line="157"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(unicode) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        return unicodeToGlyph.get(new Integer(unicode));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/ttf/AdobeGlyphList.java"
+            line="178"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf((char) (c + first)) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                            Character key = new Character((char) (c + first));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="126"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Float.valueOf(value) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                            widths.put(key, new Float(value));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="130"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf((char) c) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                        widths.put(new Character((char) c), new Float(value));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="143"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Float.valueOf(value) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                        widths.put(new Character((char) c), new Float(value));"
+        errorLine2="                                                            ~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="143"
+            column="61"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf((char) (c + first)) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                            Character key = new Character((char) (c + first));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="189"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Float.valueOf(value) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                            widthsVertical.put(key, new Float(value));"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="193"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf((char) c) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                        widthsVertical.put(new Character((char) c), new Float(value));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="206"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Float.valueOf(value) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                        widthsVertical.put(new Character((char) c), new Float(value));"
+        errorLine2="                                                                    ~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="206"
+            column="69"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf(code) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        Float w = widths.get(new Character(code));"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="230"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf(code) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        Float w = widthsVertical.get(new Character(code));"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/CIDFontType2.java"
+            line="248"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(idDelta) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        segments.put(s, new Integer(idDelta));"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/ttf/CMapFormat4.java"
+            line="74"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(page.getPageNumber()) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        Integer pageNumber = new Integer(page.getPageNumber());"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/Cache.java"
+            line="233"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(page.getPageNumber()) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        Integer pageNumber = new Integer(page.getPageNumber());"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/Cache.java"
+            line="257"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(page.getPageNumber()) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        Integer pageNumber = new Integer(page.getPageNumber());"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/Cache.java"
+            line="281"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Double.valueOf(value) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        return new PDFObject(this, PDFObject.NUMBER, new Double(value));"
+        errorLine2="                                                     ~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFFile.java"
+            line="868"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(pagenum) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        Integer key = new Integer(pagenum);"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFFile.java"
+            line="1325"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Integer.valueOf(pageNum) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        PDFParser parser = cache.getPageParser(new Integer(pageNum));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFFile.java"
+            line="1368"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf(src) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        PDFGlyph glyph = (PDFGlyph) charCache.get(new Character(src));"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/PDFFont.java"
+            line="304"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf(src) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="            charCache.put(new Character(src), glyph);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/PDFFont.java"
+            line="309"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf(src) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="        if (differences.containsKey(new Character(src))) {"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/PDFFontEncoding.java"
+            line="133"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf(src) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="            charName = (String) differences.get(new Character(src));"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/PDFFontEncoding.java"
+            line="134"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Character.valueOf((char) curPosition) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                    Character key = new Character((char) curPosition);"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/font/PDFFontEncoding.java"
+            line="180"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Double.valueOf(tok.value) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="            return new Double(tok.value);"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFParser.java"
+            line="1070"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Double.valueOf(0) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="            Double[] decode = {new Double(0), new Double(1)};"
+        errorLine2="                               ~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFParser.java"
+            line="1161"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Double.valueOf(1) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="            Double[] decode = {new Double(0), new Double(1)};"
+        errorLine2="                                              ~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFParser.java"
+            line="1161"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Double.valueOf(decodeObj.getAt(0).getDoubleValue()) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                decode[0] = new Double(decodeObj.getAt(0).getDoubleValue());"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFParser.java"
+            line="1165"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        severity="Warning"
+        message="Use Double.valueOf(decodeObj.getAt(1).getDoubleValue()) instead"
+        category="Performance"
+        priority="4"
+        summary="Looks for usages of `new` for wrapper classes which should use `valueOf` instead"
+        explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
+        errorLine1="                decode[1] = new Double(decodeObj.getAt(1).getDoubleValue());"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/src/com/sun/pdfview/PDFParser.java"
+            line="1166"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background @drawable/violet with a theme that also paints a background (inferred theme is @android:style/Theme)"
+        category="Performance"
+        priority="3"
+        summary="Looks for overdraw issues (where a view is painted only to be fully painted over)"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.
+
+NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.
+
+If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.
+
+Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead.
+"
+        errorLine1="    android:background=&quot;@drawable/violet&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/file_explorer.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource R.drawable.blue appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Looks for unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;drawable name=&quot;blue&quot;>#000000FF&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/values/color.xml"
+            line="5"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource R.string.hello appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Looks for unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;hello&quot;>Hello World, PdfViewerActivity!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/values/strings.xml"
+            line="3"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an inputType or a hint"
+        category="Usability"
+        priority="5"
+        summary="Looks for text fields missing `inputType` or `hint` settings"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.
+
+The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
+
+If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="    &lt;EditText android:id=&quot;@+id/output&quot;"
+        errorLine2="    ^"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="37"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="[Accessibility] Missing contentDescription attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Ensures that image widgets provide a contentDescription"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.
+
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.
+
+Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1=" &lt;ImageView  "
+        errorLine2=" ^"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/file_row.xml"
+            line="8"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;PDF-File:&quot;, should use @string resource"
+        category="Internationalization"
+        priority="5"
+        summary="Looks for hardcoded text attributes which should be converted to resource lookup"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;PDF-File:&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="13"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;please enter a filename (e.g. /sdcard/download/test.pdf)&quot;, should use @string resource"
+        category="Internationalization"
+        priority="5"
+        summary="Looks for hardcoded text attributes which should be converted to resource lookup"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:hint=&quot;please enter a filename (e.g. /sdcard/download/test.pdf)&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="20"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;antialias&quot;, should use @string resource"
+        category="Internationalization"
+        priority="5"
+        summary="Looks for hardcoded text attributes which should be converted to resource lookup"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;antialias&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Show&quot;, should use @string resource"
+        category="Internationalization"
+        priority="5"
+        summary="Looks for hardcoded text attributes which should be converted to resource lookup"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="  &lt;Button android:id=&quot;@+id/btShow&quot; android:layout_width=&quot;120px&quot;  android:layout_height=&quot;40px&quot; android:text=&quot;Show&quot;>&lt;/Button>"
+        errorLine2="                                                                                              ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="32"
+            column="95"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Exit&quot;, should use @string resource"
+        category="Internationalization"
+        priority="5"
+        summary="Looks for hardcoded text attributes which should be converted to resource lookup"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="  &lt;Button android:id=&quot;@+id/btExit&quot; android:layout_width=&quot;120px&quot;  android:layout_height=&quot;40px&quot; android:text=&quot;Exit&quot;>&lt;/Button>"
+        errorLine2="                                                                                              ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="33"
+            column="95"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;[enter filename and press &apos;show&apos;]&quot;, should use @string resource"
+        category="Internationalization"
+        priority="5"
+        summary="Looks for hardcoded text attributes which should be converted to resource lookup"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;[enter filename and press &apos;show&apos;]&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+            line="42"
+            column="9"/>
+    </issue>
+
+</issues>

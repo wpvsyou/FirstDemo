@@ -1,0 +1,1261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Lint Report</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" type="text/css" href="lint-results_files/hololike.css" />
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body>
+<h1>Lint Report</h1>
+<div class="titleSeparator"></div>
+Check performed at Fri Sep 05 17:44:47 CST 2014.<br/>
+3 errors and 63 warnings found:<br/><br/>
+<table class="overview">
+<tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">7</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#Assert">Assert: Assertions</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#DefaultLocale">DefaultLocale: Implied default locale in case conversion</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#InlinedApi">InlinedApi: Using inlined constants on older versions</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-error.png" alt="Error" />
+<a href="#NewApi">NewApi: Calling new methods on older versions</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#SdCardPath">SdCardPath: Hardcoded reference to <code>/sdcard</code></a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ManifestOrder">ManifestOrder: Incorrect order of elements in manifest</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#Deprecated">Deprecated: Using deprecated resources</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#PxUsage">PxUsage: Using 'px' dimension</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Security">Security</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TrulyRandom">TrulyRandom: Weak RNG</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#DrawAllocation">DrawAllocation: Memory allocations within drawing code</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UseCompoundDrawables">UseCompoundDrawables: Node can be replaced by a <code>TextView</code> with compound drawables</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UseSparseArrays">UseSparseArrays: HashMap can be replaced with SparseArray</a>
+</td></tr>
+<tr>
+<td class="countColumn">30</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UseValueOf">UseValueOf: Should use <code>valueOf</code> instead of <code>new</code></a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#Overdraw">Overdraw: Overdraw: Painting regions more than once</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedResources">UnusedResources: Unused resources</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TextFields">TextFields: Missing <code>inputType</code> or <code>hint</code></a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ContentDescription">ContentDescription: Image without <code>contentDescription</code></a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
+</td></tr>
+<tr>
+<td class="countColumn">6</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#HardcodedText">HardcodedText: Hardcoded text</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (13)</a>
+</td></tr></table>
+<br/>
+<a name="Correctness"></a>
+<div class="category"><a href="#" title="Return to top">Correctness</a><div class="categorySeparator"></div>
+</div>
+<a name="Assert"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Assert: Assertions</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../src/com/sun/pdfview/decrypt/CryptFilterDecrypter.java">../src/com/sun/pdfview/decrypt/CryptFilterDecrypter.java</a>:67</span>: <span class="message">Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno">  64</span>             throws PDFParseException {
+<span class="lineno">  65</span> 
+<span class="lineno">  66</span>         this.decrypters = decrypters;
+<span class="lineno">  67</span>         <span class="errorspan">assert this.decrypters.containsKey("Identity") :</span>
+<span class="lineno">  68</span>                 "Crypt Filter map does not contain required Identity filter";
+<span class="lineno">  69</span>         defaultStreamDecrypter = this.decrypters.get(defaultStreamCryptName);
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/decrypt/PDFDecrypterFactory.java">../src/com/sun/pdfview/decrypt/PDFDecrypterFactory.java</a>:151</span>: <span class="message">Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 148</span>             EncryptionUnsupportedByPlatformException,
+<span class="lineno"> 149</span>             EncryptionUnsupportedByProductException {
+<span class="lineno"> 150</span> 
+<span class="lineno"> 151</span>         <span class="errorspan">assert v >= 4 : "crypt filter decrypter not supported for " +</span>
+<span class="lineno"> 152</span>                         "standard encryption prior to version 4";
+<span class="lineno"> 153</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFObject.java">../src/com/sun/pdfview/PDFObject.java</a>:555</span>: <span class="message">Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 552</span>      * @param objGen the object generation number
+<span class="lineno"> 553</span>      */
+<span class="lineno"> 554</span>     public void setObjectId(int objNum, int objGen) {
+<span class="lineno"> 555</span>         <span class="errorspan">assert objNum >= OBJ_NUM_TRAILER;</span>
+<span class="lineno"> 556</span>         assert objGen >= OBJ_NUM_TRAILER;
+<span class="lineno"> 557</span>         this.objNum = objNum;
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFObject.java">../src/com/sun/pdfview/PDFObject.java</a>:556</span>: <span class="message">Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 553</span>      */
+<span class="lineno"> 554</span>     public void setObjectId(int objNum, int objGen) {
+<span class="lineno"> 555</span>         assert objNum >= OBJ_NUM_TRAILER;
+<span class="lineno"> 556</span>         <span class="errorspan">assert objGen >= OBJ_NUM_TRAILER;</span>
+<span class="lineno"> 557</span>         this.objNum = objNum;
+<span class="lineno"> 558</span>         this.objGen = objGen;
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/decrypt/StandardDecrypter.java">../src/com/sun/pdfview/decrypt/StandardDecrypter.java</a>:585</span>: <span class="message">Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 582</span>             // Step 6: Append 16 bytes of arbitrary padding to the output from
+<span class="lineno"> 583</span>             // the final invocation of the RC4 function and store the 32-byte
+<span class="lineno"> 584</span>             // result as the value of the U entry in the encryption dictionary.
+<span class="lineno"> 585</span>             <span class="errorspan">assert v.length == 16;</span>
+<span class="lineno"> 586</span>             final byte[] entryValue = new byte[32];
+<span class="lineno"> 587</span>             System.arraycopy(v, 0, entryValue, 0, v.length);
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/decrypt/StandardDecrypter.java">../src/com/sun/pdfview/decrypt/StandardDecrypter.java</a>:640</span>: <span class="message">Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 637</span>         if (revision >= 3) {
+<span class="lineno"> 638</span>             rc4shuffle(pwvalue, rc4KeyBytes, rc4);
+<span class="lineno"> 639</span>         }
+<span class="lineno"> 640</span>         <span class="errorspan">assert pwvalue.length == 32;</span>
+<span class="lineno"> 641</span>         return pwvalue;
+<span class="lineno"> 642</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/decrypt/StandardDecrypter.java">../src/com/sun/pdfview/decrypt/StandardDecrypter.java</a>:820</span>: <span class="message">Assertions are unreliable. Use BuildConfig.DEBUG conditional checks instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 817</span>         // correct user password. The key obtained in step 1 (that is, in the
+<span class="lineno"> 818</span>         // first step of Algorithm 3.4 or 3.5) can be used to decrypt the
+<span class="lineno"> 819</span>         // document using Algorithm 3.1 on page 119.
+<span class="lineno"> 820</span>         <span class="errorspan">assert calculatedUValue.length == 32;</span>
+<span class="lineno"> 821</span>         if (uValue.length != calculatedUValue.length) {
+<span class="lineno"> 822</span>             throw new PDFParseException("Improper U entry length; " +
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for usages of the assert keyword.</div>
+<div class="explanation">
+Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (<code>adb shell setprop debug.assert 1</code>), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside <code>if (BuildConfig.DEBUG) { }</code> blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.<br/>
+<br/>
+For example, you can replace <code>assert speed > 0</code> with <code>if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }</code>.<br/>
+<br/>
+(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)
+</div>
+<br/><div class="moreinfo">More info: <a href="https://code.google.com/p/android/issues/detail?id=65183">https://code.google.com/p/android/issues/detail?id=65183</a>
+</div><br/>To suppress this error, use the issue id "Assert" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="DefaultLocale"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">DefaultLocale: Implied default locale in case conversion</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../activitysrc/net/sf/andpdf/pdfviewer/MyAdapter.java">../activitysrc/net/sf/andpdf/pdfviewer/MyAdapter.java</a>:107</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 104</span> 			holder.text.setText(fName);			
+<span class="lineno"> 105</span> 			if(f.isDirectory())
+<span class="lineno"> 106</span> 				holder.icon.setImageBitmap(mIconFolder);
+<span class="lineno"> 107</span> 			else if(fName.substring(fName.lastIndexOf(".") + 1, fName.length()).<span class="errorspan">toLowerCase().equals("pdf"))</span>
+<span class="lineno"> 108</span> 				holder.icon.setImageBitmap(mIconPdf);
+<span class="lineno"> 109</span> 			else
+</pre>
+<span class="location"><a href="../activitysrc/net/sf/andpdf/pdfviewer/PdfFileSelectActivity.java">../activitysrc/net/sf/andpdf/pdfviewer/PdfFileSelectActivity.java</a>:189</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 186</span>         String fName = file.getName();
+<span class="lineno"> 187</span>         if (file.isDirectory())
+<span class="lineno"> 188</span>             getFileDir(paths.get(position));
+<span class="lineno"> 189</span>         else if (fName.substring(fName.lastIndexOf(".") + 1, fName.length()).<span class="errorspan">toLowerCase().equals("pdf"))</span>
+<span class="lineno"> 190</span>             updateFileSelected(file);
+<span class="lineno"> 191</span>         else
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Finds calls to locale-ambiguous <code>String</code> manipulation methods.</div>
+<div class="explanation">
+Calling <code>String#toLowerCase()</code> or <code>#toUpperCase()</code> <b>without specifying an explicit locale</b> is a common source of bugs. The reason for that is that those methods will use the current locale on the user's device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for <code>i</code> is <b>not</b> <code>I</code>.<br/>
+<br/>
+If you want the methods to just perform ASCII replacement, for example to convert an enum name, call <code>String#toUpperCase(Locale.US)</code> instead. If you really want to use the current locale, call <code>String#toUpperCase(Locale.getDefault())</code> instead.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/java/util/Locale.html#default_locale">http://developer.android.com/reference/java/util/Locale.html#default_locale</a>
+</div><br/>To suppress this error, use the issue id "DefaultLocale" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="InlinedApi"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">InlinedApi: Using inlined constants on older versions</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../activitysrc/util/DragImageView.java">../activitysrc/util/DragImageView.java</a>:95</span>: <span class="message">Field requires API level 5 (current min is 3): android.view.MotionEvent#ACTION_MASK</span><br /><pre class="errorlines">
+<span class="lineno">  92</span> 
+<span class="lineno">  93</span>     @Override
+<span class="lineno">  94</span>     public boolean onTouchEvent(MotionEvent event) {
+<span class="lineno">  95</span>         switch (event.getAction() &amp; <span class="errorspan">MotionEvent.ACTION_MASK) {</span>
+<span class="lineno">  96</span>             case MotionEvent.ACTION_DOWN:
+<span class="lineno">  97</span>                 onTouchDown(event);
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Finds inlined fields that may or may not work on older platforms.</div>
+<div class="explanation">
+This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that's fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it's safe and can be suppressed or whether the code needs tbe guarded.<br/>
+<br/>
+If you really want to use this API and don't need to support older devices just set the <code>minSdkVersion</code> in your <code>AndroidManifest.xml</code> file.<br/>
+If your code is <b>deliberately</b> accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the <code>@TargetApi</code> annotation specifying the local minimum SDK to apply, such as <code>@TargetApi(11)</code>, such that this check considers 11 rather than your manifest file's minimum SDK as the required API level.<br/>
+
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "InlinedApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NewApi"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">NewApi: Calling new methods on older versions</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../activitysrc/util/DragImageView.java">../activitysrc/util/DragImageView.java</a>:133</span>: <span class="message">Call requires API level 5 (current min is 3): android.view.MotionEvent#getPointerCount</span><br /><pre class="errorlines">
+<span class="lineno"> 130</span>     }
+<span class="lineno"> 131</span> 
+<span class="lineno"> 132</span>     void onPointerDown(MotionEvent event) {
+<span class="lineno"> 133</span>         if (event.<span class="errorspan">getPointerCount() == 2) {</span>
+<span class="lineno"> 134</span>             mode = MODE.ZOOM;
+<span class="lineno"> 135</span>             beforeLenght = getDistance(event);
+</pre>
+<span class="location"><a href="../activitysrc/util/DragImageView.java">../activitysrc/util/DragImageView.java</a>:193</span>: <span class="message">Call requires API level 5 (current min is 3): android.view.MotionEvent#getX</span><br /><pre class="errorlines">
+<span class="lineno"> 190</span>     }
+<span class="lineno"> 191</span> 
+<span class="lineno"> 192</span>     float getDistance(MotionEvent event) {
+<span class="lineno"> 193</span>         float x = event.<span class="errorspan">getX(0) - event.getX(1);</span>
+<span class="lineno"> 194</span>         float y = event.getY(0) - event.getY(1);
+<span class="lineno"> 195</span> 
+</pre>
+<span class="location"><a href="../activitysrc/util/DragImageView.java">../activitysrc/util/DragImageView.java</a>:194</span>: <span class="message">Call requires API level 5 (current min is 3): android.view.MotionEvent#getY</span><br /><pre class="errorlines">
+<span class="lineno"> 191</span> 
+<span class="lineno"> 192</span>     float getDistance(MotionEvent event) {
+<span class="lineno"> 193</span>         float x = event.getX(0) - event.getX(1);
+<span class="lineno"> 194</span>         float y = event.<span class="errorspan">getY(0) - event.getY(1);</span>
+<span class="lineno"> 195</span> 
+<span class="lineno"> 196</span>         return FloatMath.sqrt(x * x + y * y);
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Finds API accesses to APIs that are not supported in all targeted API versions.</div>
+<div class="explanation">
+This check scans through all the Android API calls in the application and warns about any calls that are not available on <b>all</b> versions targeted by this application (according to its minimum SDK attribute in the manifest).<br/>
+<br/>
+If you really want to use this API and don't need to support older devices just set the <code>minSdkVersion</code> in your <code>AndroidManifest.xml</code> file.<br/>
+If your code is <b>deliberately</b> accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the <code>@TargetApi</code> annotation specifying the local minimum SDK to apply, such as <code>@TargetApi(11)</code>, such that this check considers 11 rather than your manifest file's minimum SDK as the required API level.<br/>
+<br/>
+If you are deliberately setting <code>android:</code> attributes in style definitions, make sure you place this in a <code>values-v11</code> folder in order to avoid running into runtime conflicts on certain devices where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.<br/>
+<br/>
+Similarly, you can use tools:targetApi="11" in an XML file to indicate that the element will only be inflated in an adequate context.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SdCardPath"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">SdCardPath: Hardcoded reference to <code>/sdcard</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../activitysrc/net/sf/andpdf/pdfviewer/PdfFileSelectActivity.java">../activitysrc/net/sf/andpdf/pdfviewer/PdfFileSelectActivity.java</a>:33</span>: <span class="message">Do not hardcode "/sdcard/"; use Environment.getExternalStorageDirectory().getPath() instead</span><br /><pre class="errorlines">
+<span class="lineno">  30</span>     public final static String PREFS_NAME = "PDFViewerPrefs";
+<span class="lineno">  31</span>     public static final String PREFS_PDFFILENAME = "pdffilename";
+<span class="lineno">  32</span>     public static final String PREFS_ANTIALIAS = "antialias";
+<span class="lineno">  33</span>     public final static String DEFAULTPDFFILENAME = <span class="errorspan">"/sdcard/download/example.pdf";</span>
+<span class="lineno">  34</span>     public static final boolean DEFAULTSHOWIMAGES = true;
+<span class="lineno">  35</span>     public static final boolean DEFAULTANTIALIAS = true;
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for hardcoded references to <code>/sdcard</code></div>
+<div class="explanation">
+Your code should not reference the <code>/sdcard</code> path directly; instead use <code>Environment.getExternalStorageDirectory().getPath()</code>.<br/>
+<br/>
+Similarly, do not reference the <code>/data/data/</code> path directly; it can vary in multi-user scenarios. Instead, use <code>Context.getFilesDir().getPath()</code>.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal">http://developer.android.com/guide/topics/data/data-storage.html#filesExternal</a>
+</div><br/>To suppress this error, use the issue id "SdCardPath" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="ManifestOrder"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ManifestOrder: Incorrect order of elements in manifest</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../AndroidManifest.xml">../AndroidManifest.xml</a>:32</span>: <span class="message">&lt;uses-sdk> tag appears after &lt;application> tag</span><br /><pre class="errorlines">
+<span class="lineno">  29</span>         
+<span class="lineno">  30</span>     &lt;/application>
+<span class="lineno">  31</span>     
+<span class="lineno">  32</span>     <span class="errorspan">&lt;uses-sdk android:minSdkVersion="3" /></span>
+<span class="lineno">  33</span>     
+<span class="lineno">  34</span> &lt;/manifest> 
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Checks for manifest problems like <code>&lt;uses-sdk></code> after the <code>&lt;application></code> tag.</div>
+<div class="explanation">
+The &lt;application> tag should appear after the elements which declare which version you need, which features you need, which libraries you need, and so on. In the past there have been subtle bugs (such as themes not getting applied correctly) when the <code>&lt;application></code> tag appears before some of these other elements, so it's best to order your manifest in the logical dependency order.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ManifestOrder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="Deprecated"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Deprecated: Using deprecated resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:38</span>: <span class="message">android:autoText is deprecated: Use inputType instead</span><br /><pre class="errorlines">
+<span class="lineno">  35</span> 	
+<span class="lineno">  36</span> 	&lt;!-- Output -->
+<span class="lineno">  37</span>     &lt;EditText android:id="@+id/output"
+<span class="lineno">  38</span>         android:layout_width="fill_parent" <span class="errorspan">android:autoText="true"</span>
+<span class="lineno">  39</span>         android:capitalize="sentences"
+<span class="lineno">  40</span>         android:layout_weight="1"
+</pre>
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:39</span>: <span class="message">android:capitalize is deprecated: Use inputType instead</span><br /><pre class="errorlines">
+<span class="lineno">  36</span> 	&lt;!-- Output -->
+<span class="lineno">  37</span>     &lt;EditText android:id="@+id/output"
+<span class="lineno">  38</span>         android:layout_width="fill_parent" android:autoText="true"
+<span class="lineno">  39</span>         <span class="errorspan">android:capitalize="sentences"</span>
+<span class="lineno">  40</span>         android:layout_weight="1"
+<span class="lineno">  41</span>         android:freezesText="true" android:layout_height="0dip"
+</pre>
+</div>
+<div class="metadata">Priority: 2 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for usages of deprecated layouts, attributes, and so on.</div>
+<div class="explanation">
+Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You've been warned.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "Deprecated" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="PxUsage"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">PxUsage: Using 'px' dimension</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../res/layout/file_explorer.xml">../res/layout/file_explorer.xml</a>:13</span>: <span class="message">Avoid using "px" as units; use "dp" instead</span><br /><pre class="errorlines">
+<span class="lineno">  10</span>     	android:layout_width="fill_parent" 
+<span class="lineno">  11</span>     	android:layout_height="wrap_content" 
+<span class="lineno">  12</span>     	android:id="@+id/mPath"
+<span class="lineno">  13</span>     	<span class="errorspan">android:padding="5px"</span>
+<span class="lineno">  14</span>     	android:textSize="18sp"
+<span class="lineno">  15</span>     	android:textColor="@drawable/white"
+</pre>
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:32</span>: <span class="message">Avoid using "px" as units; use "dp" instead</span><br /><pre class="errorlines">
+<span class="lineno">  29</span>     
+<span class="lineno">  30</span> 	&lt;!-- Button 'Show' -->
+<span class="lineno">  31</span> 	&lt;LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="horizontal" >
+<span class="lineno">  32</span> 		&lt;Button android:id="@+id/btShow" android:layout_width="120px"  <span class="errorspan">android:layout_height="40px" android:text="Show">&lt;/Button></span>
+<span class="lineno">  33</span> 		&lt;Button android:id="@+id/btExit" android:layout_width="120px"  android:layout_height="40px" android:text="Exit">&lt;/Button>
+<span class="lineno">  34</span> 	&lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:33</span>: <span class="message">Avoid using "px" as units; use "dp" instead</span><br /><pre class="errorlines">
+<span class="lineno">  30</span> 	&lt;!-- Button 'Show' -->
+<span class="lineno">  31</span> 	&lt;LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="horizontal" >
+<span class="lineno">  32</span> 		&lt;Button android:id="@+id/btShow" android:layout_width="120px"  android:layout_height="40px" android:text="Show">&lt;/Button>
+<span class="lineno">  33</span> 		&lt;Button android:id="@+id/btExit" android:layout_width="120px"  <span class="errorspan">android:layout_height="40px" android:text="Exit">&lt;/Button></span>
+<span class="lineno">  34</span> 	&lt;/LinearLayout>
+<span class="lineno">  35</span> 	
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 2 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for use of the <code>px</code> dimension.</div>
+<div class="explanation">
+For performance reasons and to keep the code simpler, the Android system uses pixels as the standard unit for expressing dimension or coordinate values. That means that the dimensions of a view are always expressed in the code using pixels, but always based on the current screen density. For instance, if <code>myView.getWidth()</code> returns 10, the view is 10 pixels wide on the current screen, but on a device with a higher density screen, the value returned might be 15. If you use pixel values in your application code to work with bitmaps that are not pre-scaled for the current screen density, you might need to scale the pixel values that you use in your code to match the un-scaled bitmap source.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html#screen-independence">http://developer.android.com/guide/practices/screens_support.html#screen-independence</a>
+</div><br/>To suppress this error, use the issue id "PxUsage" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Security"></a>
+<div class="category"><a href="#" title="Return to top">Security</a><div class="categorySeparator"></div>
+</div>
+<a name="TrulyRandom"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TrulyRandom: Weak RNG</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../src/com/sun/pdfview/decrypt/StandardDecrypter.java">../src/com/sun/pdfview/decrypt/StandardDecrypter.java</a>:984</span>: <span class="message">Potentially insecure random numbers on Android 4.3 and older. Read https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html for more info.</span><br /><pre class="errorlines">
+<span class="lineno"> 981</span>      */
+<span class="lineno"> 982</span>     private void initEncryption(Cipher cipher, SecretKey key)
+<span class="lineno"> 983</span>             throws InvalidKeyException {
+<span class="lineno"> 984</span>         cipher.<span class="errorspan">init(Cipher.ENCRYPT_MODE, key);</span>
+<span class="lineno"> 985</span>     }
+<span class="lineno"> 986</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 9 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for calls to JCA primitives that may be affected by SecureRandom vulnerability.</div>
+<div class="explanation">
+Key generation, signing, encryption, and random number generation may not receive cryptographically strong values due to improper initialization of the underlying PRNG on Android 4.3 and below.<br/>
+<br/>
+If your application relies on cryptographically secure random number generation you should apply the workaround described in https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html .<br/>
+<br/>
+This lint rule is mostly informational; it does not accurately detect whether cryptographically secure RNG is required, or whether the workaround has already been applied. After reading the blog entry and updating your code if necessary, you can disable this lint issue.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html">https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html</a>
+</div><br/>To suppress this error, use the issue id "TrulyRandom" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Performance"></a>
+<div class="category"><a href="#" title="Return to top">Performance</a><div class="categorySeparator"></div>
+</div>
+<a name="DrawAllocation"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">DrawAllocation: Memory allocations within drawing code</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../activitysrc/net/sf/andpdf/pdfviewer/PdfViewerActivity.java">../activitysrc/net/sf/andpdf/pdfviewer/PdfViewerActivity.java</a>:323</span>: <span class="message">Avoid object allocations during draw/layout operations (preallocate and reuse instead)</span><br /><pre class="errorlines">
+<span class="lineno"> 320</span> 
+<span class="lineno"> 321</span>         @Override
+<span class="lineno"> 322</span>         protected void onDraw(Canvas canvas) {
+<span class="lineno"> 323</span>             Paint paint = <span class="errorspan">new Paint();</span>
+<span class="lineno"> 324</span> 
+<span class="lineno"> 325</span>             canvas.drawColor(Color.LTGRAY);
+</pre>
+</div>
+<div class="metadata">Priority: 9 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for memory allocations within drawing code.</div>
+<div class="explanation">
+You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.<br/>
+<br/>
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.<br/>
+<br/>
+Some methods allocate memory on your behalf (such as <code>Bitmap.create</code>), and these should be handled in the same way.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "DrawAllocation" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseCompoundDrawables"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseCompoundDrawables: Node can be replaced by a <code>TextView</code> with compound drawables</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../res/layout/file_row.xml">../res/layout/file_row.xml</a>:2</span>: <span class="message">This tag and its children can be replaced by one &lt;TextView/> and a compound drawable</span><br /><pre class="errorlines">
+<span class="lineno">   1</span> &lt;?xml version="1.0" encoding="utf-8"?>
+<span class="lineno">   2</span> <span class="errorspan">&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"</span>
+<span class="lineno">   3</span>     android:orientation="horizontal"
+<span class="lineno">   4</span>     android:layout_width="fill_parent"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Checks whether the current node can be replaced by a <code>TextView</code> using compound drawables.</div>
+<div class="explanation">
+A <code>LinearLayout</code> which contains an <code>ImageView</code> and a <code>TextView</code> can be more efficiently handled as a compound drawable (a single TextView, using the <code>drawableTop</code>, <code>drawableLeft</code>, <code>drawableRight</code> and/or <code>drawableBottom</code> attributes to draw one or more images adjacent to the text).<br/>
+<br/>
+If the two widgets are offset from each other with margins, this can be replaced with a <code>drawablePadding</code> attribute.<br/>
+<br/>
+There's a lint quickfix to perform this conversion in the Eclipse plugin.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseCompoundDrawables" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseSparseArrays"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseSparseArrays: HashMap can be replaced with SparseArray</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../src/com/sun/pdfview/font/ttf/AdobeGlyphList.java">../src/com/sun/pdfview/font/ttf/AdobeGlyphList.java</a>:76</span>: <span class="message">Use new SparseArray&lt;String>(...) instead for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  73</span>      */
+<span class="lineno">  74</span>     private AdobeGlyphList() {
+<span class="lineno">  75</span>         glyphToUnicodes = new HashMap&lt;String, int[]>(4500);
+<span class="lineno">  76</span>         unicodeToGlyph = <span class="errorspan">new HashMap&lt;Integer, String>(4500);</span>
+<span class="lineno">  77</span>         glyphLoaderThread = new Thread(new Runnable() {
+<span class="lineno">  78</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/Cache.java">../src/com/sun/pdfview/Cache.java</a>:40</span>: <span class="message">Use new SparseArray&lt;SoftReference>(...) instead for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  37</span> 
+<span class="lineno">  38</span>     /** Creates a new instance of a Cache */
+<span class="lineno">  39</span>     public Cache() {
+<span class="lineno">  40</span>         pages = Collections.synchronizedMap(<span class="errorspan">new HashMap&lt;Integer,SoftReference>());</span>
+<span class="lineno">  41</span>     }
+<span class="lineno">  42</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for opportunities to replace HashMaps with the more efficient SparseArray.</div>
+<div class="explanation">
+For maps where the keys are of type integer, it's typically more efficient to use the Android <code>SparseArray</code> API. This check identifies scenarios where you might want to consider using <code>SparseArray</code> instead of <code>HashMap</code> for better performance.<br/>
+<br/>
+This is <b>particularly</b> useful when the value types are primitives like ints, where you can use <code>SparseIntArray</code> and avoid auto-boxing the values from <code>int</code> to <code>Integer</code>.<br/>
+<br/>
+If you need to construct a <code>HashMap</code> because you need to call an API outside of your control which requires a <code>Map</code>, you can suppress this warning using for example the <code>@SuppressLint</code> annotation.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseSparseArrays" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseValueOf"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseValueOf: Should use <code>valueOf</code> instead of <code>new</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../src/com/sun/pdfview/font/ttf/AdobeGlyphList.java">../src/com/sun/pdfview/font/ttf/AdobeGlyphList.java</a>:109</span>: <span class="message">Use Integer.valueOf(codes[i]) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 106</span>                             codes = new int[unicodes.size()];
+<span class="lineno"> 107</span>                             for (int i = 0; i &lt; unicodes.size(); i++) {
+<span class="lineno"> 108</span>                                 codes[i] = Integer.parseInt(unicodes.get(i), 16);
+<span class="lineno"> 109</span>                                 unicodeToGlyph.put(<span class="errorspan">new Integer(codes[i]), glyphName);</span>
+<span class="lineno"> 110</span>                             }
+<span class="lineno"> 111</span>                             glyphToUnicodes.put(glyphName, codes);
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/ttf/AdobeGlyphList.java">../src/com/sun/pdfview/font/ttf/AdobeGlyphList.java</a>:157</span>: <span class="message">Use Integer.valueOf(unicodes[0]) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 154</span>         if (unicodes == null) {
+<span class="lineno"> 155</span>             return null;
+<span class="lineno"> 156</span>         } else {
+<span class="lineno"> 157</span>             return <span class="errorspan">new Integer(unicodes[0]);</span>
+<span class="lineno"> 158</span>         }
+<span class="lineno"> 159</span>     }
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/ttf/AdobeGlyphList.java">../src/com/sun/pdfview/font/ttf/AdobeGlyphList.java</a>:178</span>: <span class="message">Use Integer.valueOf(unicode) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 175</span>                 }
+<span class="lineno"> 176</span>             }
+<span class="lineno"> 177</span>         }
+<span class="lineno"> 178</span>         return unicodeToGlyph.get(<span class="errorspan">new Integer(unicode));</span>
+<span class="lineno"> 179</span>     }
+<span class="lineno"> 180</span> }
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:126</span>: <span class="message">Use Character.valueOf((char) (c + first)) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 123</span>                         // add all the entries in the array to the width array
+<span class="lineno"> 124</span>                         PDFObject[] entries = widthArray[i].getArray();
+<span class="lineno"> 125</span>                         for (int c = 0; c &lt; entries.length; c++) {
+<span class="lineno"> 126</span>                             Character key = <span class="errorspan">new Character((char) (c + first));</span>
+<span class="lineno"> 127</span> 
+<span class="lineno"> 128</span>                             // value is width / default width
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:130</span>: <span class="message">Use Float.valueOf(value) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 127</span> 
+<span class="lineno"> 128</span>                             // value is width / default width
+<span class="lineno"> 129</span>                             float value = entries[c].getIntValue();
+<span class="lineno"> 130</span>                             widths.put(key, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 131</span>                         }
+<span class="lineno"> 132</span>                         // all done
+</pre>
+<button id="UseValueOfDivLink" onclick="reveal('UseValueOfDiv');" />+ 25 More Occurrences...</button>
+<div id="UseValueOfDiv" style="display: none">
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:143</span>: <span class="message">Use Character.valueOf((char) c) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 140</span> 
+<span class="lineno"> 141</span>                     // set the range
+<span class="lineno"> 142</span>                     for (int c = first; c &lt;= last; c++) {
+<span class="lineno"> 143</span>                         widths.put(<span class="errorspan">new Character((char) c), new Float(value));</span>
+<span class="lineno"> 144</span>                     }
+<span class="lineno"> 145</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:143</span>: <span class="message">Use Float.valueOf(value) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 140</span> 
+<span class="lineno"> 141</span>                     // set the range
+<span class="lineno"> 142</span>                     for (int c = first; c &lt;= last; c++) {
+<span class="lineno"> 143</span>                         widths.put(new Character((char) c), <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 144</span>                     }
+<span class="lineno"> 145</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:189</span>: <span class="message">Use Character.valueOf((char) (c + first)) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 186</span>                         // add all the entries in the array to the width array
+<span class="lineno"> 187</span>                         PDFObject[] entries = widthArray[i].getArray();
+<span class="lineno"> 188</span>                         for (int c = 0; c &lt; entries.length; c++) {
+<span class="lineno"> 189</span>                             Character key = <span class="errorspan">new Character((char) (c + first));</span>
+<span class="lineno"> 190</span> 
+<span class="lineno"> 191</span>                             // value is width / default width
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:193</span>: <span class="message">Use Float.valueOf(value) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 190</span> 
+<span class="lineno"> 191</span>                             // value is width / default width
+<span class="lineno"> 192</span>                             float value = entries[c].getIntValue();
+<span class="lineno"> 193</span>                             widthsVertical.put(key, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 194</span>                         }
+<span class="lineno"> 195</span>                         // all done
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:206</span>: <span class="message">Use Character.valueOf((char) c) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 203</span> 
+<span class="lineno"> 204</span>                     // set the range
+<span class="lineno"> 205</span>                     for (int c = first; c &lt;= last; c++) {
+<span class="lineno"> 206</span>                         widthsVertical.put(<span class="errorspan">new Character((char) c), new Float(value));</span>
+<span class="lineno"> 207</span>                     }
+<span class="lineno"> 208</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:206</span>: <span class="message">Use Float.valueOf(value) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 203</span> 
+<span class="lineno"> 204</span>                     // set the range
+<span class="lineno"> 205</span>                     for (int c = first; c &lt;= last; c++) {
+<span class="lineno"> 206</span>                         widthsVertical.put(new Character((char) c), <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 207</span>                     }
+<span class="lineno"> 208</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:230</span>: <span class="message">Use Character.valueOf(code) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 227</span>         if (widths == null) {
+<span class="lineno"> 228</span>             return 1f;
+<span class="lineno"> 229</span>         }
+<span class="lineno"> 230</span>         Float w = widths.get(<span class="errorspan">new Character(code));</span>
+<span class="lineno"> 231</span>         if (w == null) {
+<span class="lineno"> 232</span>             return 1f;
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/CIDFontType2.java">../src/com/sun/pdfview/font/CIDFontType2.java</a>:248</span>: <span class="message">Use Character.valueOf(code) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 245</span>         if (widthsVertical == null) {
+<span class="lineno"> 246</span>             return 1f;
+<span class="lineno"> 247</span>         }
+<span class="lineno"> 248</span>         Float w = widthsVertical.get(<span class="errorspan">new Character(code));</span>
+<span class="lineno"> 249</span>         if (w == null) {
+<span class="lineno"> 250</span>             return 1f;
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/ttf/CMapFormat4.java">../src/com/sun/pdfview/font/ttf/CMapFormat4.java</a>:74</span>: <span class="message">Use Integer.valueOf(idDelta) instead</span><br /><pre class="errorlines">
+<span class="lineno">  71</span>         Segment s = new Segment(startCode, endCode, false);
+<span class="lineno">  72</span>         // make sure we remove any old entries
+<span class="lineno">  73</span>         segments.remove(s);
+<span class="lineno">  74</span>         segments.put(s, <span class="errorspan">new Integer(idDelta));</span>
+<span class="lineno">  75</span>     }
+<span class="lineno">  76</span>     
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/Cache.java">../src/com/sun/pdfview/Cache.java</a>:233</span>: <span class="message">Use Integer.valueOf(page.getPageNumber()) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 230</span>     Record addImageRecord(PDFPage page, ImageInfo info,
+<span class="lineno"> 231</span>             Bitmap image, PDFRenderer renderer) {
+<span class="lineno"> 232</span>         // first, find or create the relevant page record
+<span class="lineno"> 233</span>         Integer pageNumber = <span class="errorspan">new Integer(page.getPageNumber());</span>
+<span class="lineno"> 234</span>         PageRecord pageRec = getPageRecord(pageNumber);
+<span class="lineno"> 235</span>         if (pageRec == null) {
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/Cache.java">../src/com/sun/pdfview/Cache.java</a>:257</span>: <span class="message">Use Integer.valueOf(page.getPageNumber()) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 254</span>      */
+<span class="lineno"> 255</span>     Record getImageRecord(PDFPage page, ImageInfo info) {
+<span class="lineno"> 256</span>         // first find the relevant page record
+<span class="lineno"> 257</span>         Integer pageNumber = <span class="errorspan">new Integer(page.getPageNumber());</span>
+<span class="lineno"> 258</span> 
+<span class="lineno"> 259</span>         // System.out.println("Request for image on page " + pageNumber);
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/Cache.java">../src/com/sun/pdfview/Cache.java</a>:281</span>: <span class="message">Use Integer.valueOf(page.getPageNumber()) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 278</span>      */
+<span class="lineno"> 279</span>     Record removeImageRecord(PDFPage page, ImageInfo info) {
+<span class="lineno"> 280</span>         // first find the relevant page record
+<span class="lineno"> 281</span>         Integer pageNumber = <span class="errorspan">new Integer(page.getPageNumber());</span>
+<span class="lineno"> 282</span>         PageRecord pageRec = getPageRecord(pageNumber);
+<span class="lineno"> 283</span>         if (pageRec != null) {
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFFile.java">../src/com/sun/pdfview/PDFFile.java</a>:868</span>: <span class="message">Use Double.valueOf(value) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 865</span>         if (neg) {
+<span class="lineno"> 866</span>             value = -value;
+<span class="lineno"> 867</span>         }
+<span class="lineno"> 868</span>         return new PDFObject(this, PDFObject.NUMBER, <span class="errorspan">new Double(value));</span>
+<span class="lineno"> 869</span>     }
+<span class="lineno"> 870</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFFile.java">../src/com/sun/pdfview/PDFFile.java</a>:1325</span>: <span class="message">Use Integer.valueOf(pagenum) instead</span><br /><pre class="errorlines">
+<span class="lineno">1322</span>      * @param wait if true, do not exit until the page is complete.
+<span class="lineno">1323</span>      */
+<span class="lineno">1324</span>     public PDFPage getPage(int pagenum, boolean wait) {
+<span class="lineno">1325</span>         Integer key = <span class="errorspan">new Integer(pagenum);</span>
+<span class="lineno">1326</span>         HashMap&lt;String,PDFObject> resources = null;
+<span class="lineno">1327</span>         PDFObject pageObj = null;
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFFile.java">../src/com/sun/pdfview/PDFFile.java</a>:1368</span>: <span class="message">Use Integer.valueOf(pageNum) instead</span><br /><pre class="errorlines">
+<span class="lineno">1365</span>      * Stop the rendering of a particular image on this page
+<span class="lineno">1366</span>      */
+<span class="lineno">1367</span>     public void stop(int pageNum) {
+<span class="lineno">1368</span>         PDFParser parser = cache.getPageParser(<span class="errorspan">new Integer(pageNum));</span>
+<span class="lineno">1369</span>         if (parser != null) {
+<span class="lineno">1370</span>             // stop it
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/PDFFont.java">../src/com/sun/pdfview/font/PDFFont.java</a>:304</span>: <span class="message">Use Character.valueOf(src) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 301</span>         }
+<span class="lineno"> 302</span> 
+<span class="lineno"> 303</span>         // try the cache
+<span class="lineno"> 304</span>         PDFGlyph glyph = (PDFGlyph) charCache.get(<span class="errorspan">new Character(src));</span>
+<span class="lineno"> 305</span> 
+<span class="lineno"> 306</span>         // if it's not there, add it to the cache
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/PDFFont.java">../src/com/sun/pdfview/font/PDFFont.java</a>:309</span>: <span class="message">Use Character.valueOf(src) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 306</span>         // if it's not there, add it to the cache
+<span class="lineno"> 307</span>         if (glyph == null) {
+<span class="lineno"> 308</span>             glyph = getGlyph(src, name);
+<span class="lineno"> 309</span>             charCache.put(<span class="errorspan">new Character(src), glyph);</span>
+<span class="lineno"> 310</span>         }
+<span class="lineno"> 311</span> 
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/PDFFontEncoding.java">../src/com/sun/pdfview/font/PDFFontEncoding.java</a>:133</span>: <span class="message">Use Character.valueOf(src) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 130</span>         src &amp;= 0xff;
+<span class="lineno"> 131</span> 
+<span class="lineno"> 132</span>         // see if this character is in the differences list
+<span class="lineno"> 133</span>         if (differences.containsKey(<span class="errorspan">new Character(src))) {</span>
+<span class="lineno"> 134</span>             charName = (String) differences.get(new Character(src));
+<span class="lineno"> 135</span>         } else if (baseEncoding != null) {
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/PDFFontEncoding.java">../src/com/sun/pdfview/font/PDFFontEncoding.java</a>:134</span>: <span class="message">Use Character.valueOf(src) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 131</span> 
+<span class="lineno"> 132</span>         // see if this character is in the differences list
+<span class="lineno"> 133</span>         if (differences.containsKey(new Character(src))) {
+<span class="lineno"> 134</span>             charName = (String) differences.get(<span class="errorspan">new Character(src));</span>
+<span class="lineno"> 135</span>         } else if (baseEncoding != null) {
+<span class="lineno"> 136</span>             // get the character name from the base encoding
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/font/PDFFontEncoding.java">../src/com/sun/pdfview/font/PDFFontEncoding.java</a>:180</span>: <span class="message">Use Character.valueOf((char) curPosition) instead</span><br /><pre class="errorlines">
+<span class="lineno"> 177</span>                 if (diffArray[i].getType() == PDFObject.NUMBER) {
+<span class="lineno"> 178</span>                     curPosition = diffArray[i].getIntValue();
+<span class="lineno"> 179</span>                 } else if (diffArray[i].getType() == PDFObject.NAME) {
+<span class="lineno"> 180</span>                     Character key = <span class="errorspan">new Character((char) curPosition);</span>
+<span class="lineno"> 181</span>                     differences.put(key, diffArray[i].getStringValue());
+<span class="lineno"> 182</span>                     curPosition++;
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFParser.java">../src/com/sun/pdfview/PDFParser.java</a>:1070</span>: <span class="message">Use Double.valueOf(tok.value) instead</span><br /><pre class="errorlines">
+<span class="lineno">1067</span>     private Object parseObject() throws PDFParseException {
+<span class="lineno">1068</span>         Tok t = nextToken();
+<span class="lineno">1069</span>         if (t.type == Tok.NUM) {
+<span class="lineno">1070</span>             return <span class="errorspan">new Double(tok.value);</span>
+<span class="lineno">1071</span>         } else if (t.type == Tok.STR) {
+<span class="lineno">1072</span>             return tok.name;
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFParser.java">../src/com/sun/pdfview/PDFParser.java</a>:1161</span>: <span class="message">Use Double.valueOf(0) instead</span><br /><pre class="errorlines">
+<span class="lineno">1158</span>         if (imObj != null &amp;&amp; imObj.getBooleanValue()) {    	
+<span class="lineno">1159</span>         	// [PATCHED by michal.busta@gmail.com] - default value according to PDF spec. is [0, 1]
+<span class="lineno">1160</span>         	// there is no need to swap array - PDF image should handle this values 
+<span class="lineno">1161</span>             Double[] decode = {<span class="errorspan">new Double(0), new Double(1)};</span>
+<span class="lineno">1162</span>             
+<span class="lineno">1163</span>             PDFObject decodeObj = (PDFObject) hm.get("Decode");
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFParser.java">../src/com/sun/pdfview/PDFParser.java</a>:1161</span>: <span class="message">Use Double.valueOf(1) instead</span><br /><pre class="errorlines">
+<span class="lineno">1158</span>         if (imObj != null &amp;&amp; imObj.getBooleanValue()) {    	
+<span class="lineno">1159</span>         	// [PATCHED by michal.busta@gmail.com] - default value according to PDF spec. is [0, 1]
+<span class="lineno">1160</span>         	// there is no need to swap array - PDF image should handle this values 
+<span class="lineno">1161</span>             Double[] decode = {new Double(0), <span class="errorspan">new Double(1)};</span>
+<span class="lineno">1162</span>             
+<span class="lineno">1163</span>             PDFObject decodeObj = (PDFObject) hm.get("Decode");
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFParser.java">../src/com/sun/pdfview/PDFParser.java</a>:1165</span>: <span class="message">Use Double.valueOf(decodeObj.getAt(0).getDoubleValue()) instead</span><br /><pre class="errorlines">
+<span class="lineno">1162</span>             
+<span class="lineno">1163</span>             PDFObject decodeObj = (PDFObject) hm.get("Decode");
+<span class="lineno">1164</span>             if (decodeObj != null) {
+<span class="lineno">1165</span>                 decode[0] = <span class="errorspan">new Double(decodeObj.getAt(0).getDoubleValue());</span>
+<span class="lineno">1166</span>                 decode[1] = new Double(decodeObj.getAt(1).getDoubleValue());
+<span class="lineno">1167</span>             }
+</pre>
+<span class="location"><a href="../src/com/sun/pdfview/PDFParser.java">../src/com/sun/pdfview/PDFParser.java</a>:1166</span>: <span class="message">Use Double.valueOf(decodeObj.getAt(1).getDoubleValue()) instead</span><br /><pre class="errorlines">
+<span class="lineno">1163</span>             PDFObject decodeObj = (PDFObject) hm.get("Decode");
+<span class="lineno">1164</span>             if (decodeObj != null) {
+<span class="lineno">1165</span>                 decode[0] = new Double(decodeObj.getAt(0).getDoubleValue());
+<span class="lineno">1166</span>                 decode[1] = <span class="errorspan">new Double(decodeObj.getAt(1).getDoubleValue());</span>
+<span class="lineno">1167</span>             }
+<span class="lineno">1168</span> 
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for usages of <code>new</code> for wrapper classes which should use <code>valueOf</code> instead.</div>
+<div class="explanation">
+You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the <code>valueOf</code> factory method, such as <code>Integer.valueOf(42)</code>. This will typically use less memory because common integers such as 0 and 1 will share a single instance.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseValueOf" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="Overdraw"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Overdraw: Overdraw: Painting regions more than once</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../res/layout/file_explorer.xml">../res/layout/file_explorer.xml</a>:6</span>: <span class="message">Possible overdraw: Root element paints background @drawable/violet with a theme that also paints a background (inferred theme is @android:style/Theme)</span><br /><pre class="errorlines">
+<span class="lineno">   3</span>     android:orientation="vertical"
+<span class="lineno">   4</span>     android:layout_width="fill_parent"
+<span class="lineno">   5</span>     android:layout_height="fill_parent"
+<span class="lineno">   6</span>     <span class="errorspan">android:background="@drawable/violet"</span>
+<span class="lineno">   7</span>     >
+<span class="lineno">   8</span> 	&lt;!-- Current absolute path -->
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for overdraw issues (where a view is painted only to be fully painted over)</div>
+<div class="explanation">
+If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called "overdraw".<br/>
+<br/>
+NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it's currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.<br/>
+<br/>
+If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.<br/>
+<br/>
+Of course it's possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead.<br/>
+
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "Overdraw" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedResources"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedResources: Unused resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../res/values/color.xml">../res/values/color.xml</a>:5</span>: <span class="message">The resource R.drawable.blue appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">   2</span> &lt;resources>
+<span class="lineno">   3</span>     &lt;drawable name="white">#FFFFFFFF&lt;/drawable>
+<span class="lineno">   4</span>     &lt;drawable name="black">#000000&lt;/drawable>
+<span class="lineno">   5</span>     &lt;drawable <span class="errorspan">name="blue">#000000FF&lt;/drawable></span>
+<span class="lineno">   6</span>     &lt;drawable name="violet">#9370DB&lt;/drawable>
+<span class="lineno">   7</span> &lt;/resources>
+</pre>
+<span class="location"><a href="../res/values/strings.xml">../res/values/strings.xml</a>:3</span>: <span class="message">The resource R.string.hello appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">   1</span> &lt;?xml version="1.0" encoding="utf-8"?>
+<span class="lineno">   2</span> &lt;resources>
+<span class="lineno">   3</span>     &lt;string <span class="errorspan">name="hello">Hello World, PdfViewerActivity!&lt;/string></span>
+<span class="lineno">   4</span>     &lt;string name="app_name">Android PDF Viewer&lt;/string>
+<span class="lineno">   5</span> &lt;/resources>
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for unused resources.</div>
+<div class="explanation">
+Unused resources make applications larger and slow down builds.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability"></a>
+<div class="category"><a href="#" title="Return to top">Usability</a><div class="categorySeparator"></div>
+</div>
+<a name="TextFields"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TextFields: Missing <code>inputType</code> or <code>hint</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:37</span>: <span class="message">This text field does not specify an inputType or a hint</span><br /><pre class="errorlines">
+<span class="lineno">  34</span> 	&lt;/LinearLayout>
+<span class="lineno">  35</span> 	
+<span class="lineno">  36</span> 	&lt;!-- Output -->
+<span class="lineno">  37</span>     <span class="errorspan">&lt;EditText android:id="@+id/output"</span>
+<span class="lineno">  38</span>         android:layout_width="fill_parent" android:autoText="true"
+<span class="lineno">  39</span>         android:capitalize="sentences"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for text fields missing <code>inputType</code> or <code>hint</code> settings.</div>
+<div class="explanation">
+Providing an <code>inputType</code> attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.<br/>
+<br/>
+The lint detector also looks at the <code>id</code> of the view, and if the id offers a hint of the purpose of the field (for example, the <code>id</code> contains the phrase <code>phone</code> or <code>email</code>), then lint will also ensure that the <code>inputType</code> contains the corresponding type attributes.<br/>
+<br/>
+If you really want to keep the text field generic, you can suppress this warning by setting <code>inputType="text"</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "TextFields" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Accessibility"></a>
+<div class="category"><a href="#" title="Return to top">Accessibility</a><div class="categorySeparator"></div>
+</div>
+<a name="ContentDescription"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ContentDescription: Image without <code>contentDescription</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../res/layout/file_row.xml">../res/layout/file_row.xml</a>:8</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">   5</span>     android:layout_height="fill_parent"
+<span class="lineno">   6</span>     >
+<span class="lineno">   7</span>     &lt;!-- Item ICON -->
+<span class="lineno">   8</span> 	<span class="errorspan">&lt;ImageView  </span>
+<span class="lineno">   9</span>     	android:layout_width="30dip" 
+<span class="lineno">  10</span>     	android:layout_height="30dip" 
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Ensures that image widgets provide a contentDescription.</div>
+<div class="explanation">
+Non-textual widgets like ImageViews and ImageButtons should use the <code>contentDescription</code> attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.<br/>
+<br/>
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore="ContentDescription" attribute.<br/>
+<br/>
+Note that for text fields, you should not set both the <code>hint</code> and the <code>contentDescription</code> attributes since the hint will never be shown. Just set the <code>hint</code>. See <a href="http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases">http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases</a>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ContentDescription" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Internationalization"></a>
+<div class="category"><a href="#" title="Return to top">Internationalization</a><div class="categorySeparator"></div>
+</div>
+<a name="HardcodedText"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">HardcodedText: Hardcoded text</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:13</span>: <span class="message">[I18N] Hardcoded string "PDF-File:", should use @string resource</span><br /><pre class="errorlines">
+<span class="lineno">  10</span>         android:layout_width="wrap_content" android:layout_height="wrap_content"
+<span class="lineno">  11</span>         android:layout_weight="0"
+<span class="lineno">  12</span>         android:paddingBottom="0dip"
+<span class="lineno">  13</span>         <span class="errorspan">android:text="PDF-File:"/></span>
+<span class="lineno">  14</span>     &lt;EditText 
+<span class="lineno">  15</span>         android:id="@+id/filename"
+</pre>
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:20</span>: <span class="message">[I18N] Hardcoded string "please enter a filename (e.g. /sdcard/download/test.pdf)", should use @string resource</span><br /><pre class="errorlines">
+<span class="lineno">  17</span>         android:layout_height="wrap_content"
+<span class="lineno">  18</span>         android:paddingBottom="0dip"
+<span class="lineno">  19</span>         android:text="" 
+<span class="lineno">  20</span>         <span class="errorspan">android:hint="please enter a filename (e.g. /sdcard/download/test.pdf)" /></span>
+<span class="lineno">  21</span> 
+<span class="lineno">  22</span> 	&lt;!-- Show Images -->
+</pre>
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:28</span>: <span class="message">[I18N] Hardcoded string "antialias", should use @string resource</span><br /><pre class="errorlines">
+<span class="lineno">  25</span> 	        android:paddingTop="24sp"
+<span class="lineno">  26</span>             android:layout_width="wrap_content"
+<span class="lineno">  27</span>             android:layout_height="wrap_content"
+<span class="lineno">  28</span>             <span class="errorspan">android:text="antialias" /></span>
+<span class="lineno">  29</span>     
+<span class="lineno">  30</span> 	&lt;!-- Button 'Show' -->
+</pre>
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:32</span>: <span class="message">[I18N] Hardcoded string "Show", should use @string resource</span><br /><pre class="errorlines">
+<span class="lineno">  29</span>     
+<span class="lineno">  30</span> 	&lt;!-- Button 'Show' -->
+<span class="lineno">  31</span> 	&lt;LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="horizontal" >
+<span class="lineno">  32</span> 		&lt;Button android:id="@+id/btShow" android:layout_width="120px"  android:layout_height="40px" <span class="errorspan">android:text="Show">&lt;/Button></span>
+<span class="lineno">  33</span> 		&lt;Button android:id="@+id/btExit" android:layout_width="120px"  android:layout_height="40px" android:text="Exit">&lt;/Button>
+<span class="lineno">  34</span> 	&lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:33</span>: <span class="message">[I18N] Hardcoded string "Exit", should use @string resource</span><br /><pre class="errorlines">
+<span class="lineno">  30</span> 	&lt;!-- Button 'Show' -->
+<span class="lineno">  31</span> 	&lt;LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="horizontal" >
+<span class="lineno">  32</span> 		&lt;Button android:id="@+id/btShow" android:layout_width="120px"  android:layout_height="40px" android:text="Show">&lt;/Button>
+<span class="lineno">  33</span> 		&lt;Button android:id="@+id/btExit" android:layout_width="120px"  android:layout_height="40px" <span class="errorspan">android:text="Exit">&lt;/Button></span>
+<span class="lineno">  34</span> 	&lt;/LinearLayout>
+<span class="lineno">  35</span> 	
+</pre>
+<span class="location"><a href="../res/layout/pdf_file_select.xml">../res/layout/pdf_file_select.xml</a>:42</span>: <span class="message">[I18N] Hardcoded string "[enter filename and press 'show']", should use @string resource</span><br /><pre class="errorlines">
+<span class="lineno">  39</span>         android:capitalize="sentences"
+<span class="lineno">  40</span>         android:layout_weight="1"
+<span class="lineno">  41</span>         android:freezesText="true" android:layout_height="0dip"
+<span class="lineno">  42</span>         <span class="errorspan">android:text="[enter filename and press 'show']"></span>
+<span class="lineno">  43</span>         &lt;requestFocus />
+<span class="lineno">  44</span>     &lt;/EditText>
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Internationalization</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for hardcoded text attributes which should be converted to resource lookup.</div>
+<div class="explanation">
+Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
+<br/>
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)<br/>
+<br/>
+* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
+<br/>
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="MissingIssues"></a>
+<div class="category">Disabled Checks<div class="categorySeparator"></div>
+</div>
+The following issues were not run by lint, either because the check is not enabled by default, or because it was disabled with a command line flag or via one or more lint.xml configuration files in the project directories.
+<br/><br/>
+<a name="BackButton"></a>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for Back buttons, which are not common on the Android platform.</div>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div><br/>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="EasterEgg"></a>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for hidden easter eggs.</div>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FieldGetter"></a>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Suggests replacing uses of getters with direct field access within a class.</div>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div><br/>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GradleDynamicVersion"></a>
+<div class="issue">
+<div class="id">GradleDynamicVersion<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for dependencies using a dynamic version rather than a fixed version.</div>
+<div class="explanation">
+Using <code>+</code> in dependencies lets you automatically pick up the latest available version rather than a specific, named version. However, this is not recommended; your builds are not repeatable; you may have tested with a slightly different version than what the build server used. (Using a dynamic version as the major version number is more problematic than using it in the minor version position.)
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GradleDynamicVersion" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconExpectedSize"></a>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Ensures that launcher icons, notification icons etc have the correct size.</div>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlCompat"></a>
+<div class="issue">
+<div class="id">RtlCompat<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Looks for compatibility issues with RTL support.</div>
+<div class="explanation">
+API 17 adds a <code>textAlignment</code> attribute to specify text alignment. However, if you are supporting older versions than API 17, you must <b>also</b> specify a gravity or layout_gravity attribute, since older platforms will ignore the <code>textAlignment</code> attribute.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlCompat" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlEnabled"></a>
+<div class="issue">
+<div class="id">RtlEnabled<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 3 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for usages of right-to-left text constants without enabling RTL support.</div>
+<div class="explanation">
+To enable right-to-left support, when running on API 17 and higher, you must set the <code>android:supportsRtl</code> attribute in the manifest <code>&lt;application></code> element.<br/>
+If you have started adding RTL attributes, but have not yet finished the migration, you can set the attribute to false to satisfy this lint check.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlEnabled" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlHardcoded"></a>
+<div class="issue">
+<div class="id">RtlHardcoded<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for hardcoded left/right constants which could be start/end for bidirectional text.</div>
+<div class="explanation">
+Using <code>Gravity#LEFT</code> and <code>Gravity#RIGHT</code> can lead to problems when a layout is rendered in locales where text flows from right to left. Use <code>Gravity#START</code> and <code>Gravity#END</code> instead. Similarly, in XML <code>gravity</code> and <code>layout_gravity</code> attributes, use <code>start</code> rather than <code>left</code>.<br/>
+For XML attributes such as paddingLeft and <code>layout_marginLeft</code>, use <code>paddingStart</code> and <code>layout_marginStart</code>. <b>NOTE</b>: If your <code>minSdkVersion</code> is less than 17, you should add <b>both</b> the older left/right attributes <b>as well as</b> the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.<br/>
+(Note: For <code>Gravity#LEFT</code> and <code>Gravity#START</code>, you can use these constants even when targeting older platforms, because the <code>start</code> bitmask is a superset of the <code>left</code> bitmask. Therefore, you can use <code>gravity="start"</code> rather than <code>gravity="left|start"</code>.)
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlHardcoded" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlSymmetry"></a>
+<div class="issue">
+<div class="id">RtlSymmetry<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Ensures that specifying padding on one side is matched by padding on the other.</div>
+<div class="explanation">
+If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlSymmetry" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SelectableText"></a>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 7 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for TextViews which should probably allow their text to be selected.</div>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="StopShip"></a>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 10 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for comment markers of the form <code>//STOPSHIP</code> which indicates that code should not be released yet.</div>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="TypographyQuotes"></a>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for straight quotes which can be replaced by curvy quotes.</div>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div><br/>To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedIds"></a>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 1 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for unused id's.</div>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="SuppressInfo"></a>
+<div class="category">Suppressing Warnings and Errors<div class="categorySeparator"></div>
+</div>
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a @SuppressLint annotation in the Java code<br/>
+2. With a tools:ignore attribute in the XML file<br/>
+3. With a lint.xml configuration file in the project<br/>
+4. With a lint.xml configuration file passed to lint via the --config flag<br/>
+5. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a @SuppressLint("id") annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as "UnusedResources" or {"UnusedResources","UnusedIds"}, or it can be "all" to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a tools:ignore="id" attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the xmlns:android declaration:<br/>
+* xmlns:tools="http://schemas.android.com/tools"<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named lint.xml and place it at the root directory of the project in which it applies. (If you use the Eclipse plugin's Lint view, you can suppress errors there via the toolbar and Eclipse will create the lint.xml file for you.).<br/>
+<br/>
+The format of the lint.xml file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+    &lt;!-- Disable this given check in this project --><br/>
+    &lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+    &lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+    &lt;issue id="ObsoleteLayoutParam"><br/>
+        &lt;ignore path="res/layout/activation.xml" /><br/>
+        &lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+    &lt;issue id="UselessLeaf"><br/>
+        &lt;ignore path="res/layout/main.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+    &lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+"lint --ignore UnusedResources,UselessLeaf /my/project/path"<br/>
+
+
+</body>
+</html>

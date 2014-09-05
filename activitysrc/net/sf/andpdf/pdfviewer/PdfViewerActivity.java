@@ -9,6 +9,9 @@ import java.io.OutputStream;
 import java.io.RandomAccessFile;
 import java.nio.channels.FileChannel;
 
+import android.graphics.Rect;
+import android.os.Handler;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -22,11 +25,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Debug;
 import android.os.Environment;
+import android.os.Message;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.sun.pdfview.PDFFile;
 import com.sun.pdfview.PDFImage;
@@ -62,21 +71,33 @@ public class PdfViewerActivity extends Activity {
     private float mZoom;
     private File mTmpFile;
 
+    private int mWindow_width, mWindow_height;
+    private int state_height;
     private PDFPage mPdfPage;
 
     private Thread backgroundThread;
 
-
+    private Bitmap mB;
     private DragImageView mDragImageView;
 
     /**
      * Called when the activity is first created.
      */
+
+    private Handler handler;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pdf_viewer_activity);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        mWindow_width = dm.widthPixels;
+        mWindow_height = dm.heightPixels;
         mDragImageView = (DragImageView) findViewById(R.id.div_main);
 
         if (mGraphView == null) {
@@ -109,6 +130,34 @@ public class PdfViewerActivity extends Activity {
             mPage = STARTPAGE;
             mZoom = STARTZOOM;
             startRenderThread(mPage, mZoom);
+
+            handler = new Handler() {
+                @Override
+                public void handleMessage(Message msg) {
+                    Log.d(TAG, "get msg --> setBitmap ~");
+                    mDragImageView.setImageBitmap(mB);
+                }
+            };
+
+            mDragImageView.setmActivity(this);
+            ViewTreeObserver viewTreeObserver = mDragImageView.getViewTreeObserver();
+            if (viewTreeObserver != null) {
+                viewTreeObserver.addOnGlobalLayoutListener
+                        (new ViewTreeObserver.OnGlobalLayoutListener() {
+                            @Override
+                            public void onGlobalLayout() {
+                                if (state_height == 0) {
+                                    Rect frame = new Rect();
+                                    getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+                                    state_height = frame.top;
+                                    mDragImageView.setScreen_H(mWindow_height - state_height);
+                                    mDragImageView.setScreen_W(mWindow_width);
+                                }
+                            }
+                        });
+            } else {
+                Toast.makeText(this, "Sorry, System Error!", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -349,6 +398,7 @@ public class PdfViewerActivity extends Activity {
     }
 
     private static final String TAG = "Silence.W";
+
     private void showPage(int page, float zoom) throws Exception {
         long startTime = System.currentTimeMillis();
         try {
@@ -357,7 +407,7 @@ public class PdfViewerActivity extends Activity {
             int maxNum = mPdfFile.getNumPages();
             float wi = mPdfPage.getWidth();
             float hei = mPdfPage.getHeight();
-            Log.d(TAG,"the num is --> " + num + " the maxNum is --> " + maxNum
+            Log.d(TAG, "the num is --> " + num + " the maxNum is --> " + maxNum
                     + " \n the wi is --> " + wi + " the hei is --> " + hei);
             String pageInfo = new File(pdffilename).getName() + " - " + num + "/" + maxNum + ": " + wi + "x" + hei;
             mGraphView.showText(pageInfo);
@@ -366,8 +416,9 @@ public class PdfViewerActivity extends Activity {
             // free memory from previous page
             mGraphView.setPageBitmap();
             Bitmap bit = mPdfPage.getImage((int) (wi * zoom), (int) (hei * zoom), clip, true, true);
+            mB = bit;
+            handler.sendEmptyMessage(0);
             mGraphView.mBi = bit;
-            mDragImageView.setImageBitmap(bit);
             mGraphView.uiInvalidate();
         } catch (Throwable e) {
             Log.e(TAG, e.getMessage(), e);
