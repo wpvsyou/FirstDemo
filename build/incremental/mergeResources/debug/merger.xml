@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/wangpeng/aboutCode/FirstDemo/res" >
+            <file
+                name="pdf_file_select"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_file_select.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="file_row"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/layout/file_row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="file_explorer"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/layout/file_explorer.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/home/wangpeng/aboutCode/FirstDemo/res/values/color.xml"
+                qualifiers="" >
+                <drawable name="violet" >
+#9370DB
+                </drawable>
+                <drawable name="black" >
+#000000
+                </drawable>
+                <drawable name="blue" >
+#000000FF
+                </drawable>
+                <drawable name="white" >
+#FFFFFFFF
+                </drawable>
+            </file>
+            <file
+                path="/home/wangpeng/aboutCode/FirstDemo/res/values/strings.xml"
+                qualifiers="" >
+                <string name="app_name" >Android PDF Viewer
+                </string>
+                <string name="hello" >Hello World, PdfViewerActivity!
+                </string>
+            </file>
+            <file
+                name="doc"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/drawable/doc.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="pdf"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/drawable/pdf.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="back01"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/drawable/back01.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="icon"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/drawable/icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="back02"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/drawable/back02.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="folder"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/drawable/folder.png"
+                qualifiers=""
+                type="drawable" />
+        </source>
+        <source path="/home/wangpeng/aboutCode/FirstDemo/build/res/rs/debug" />
+        <source path="/home/wangpeng/aboutCode/FirstDemo/build/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/wangpeng/aboutCode/FirstDemo/build-types/debug/res" />
+    </dataSet>
+
+</merger>
