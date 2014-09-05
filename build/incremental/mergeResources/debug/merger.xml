@@ -14,6 +14,11 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="pdf_viewer_activity"
+                path="/home/wangpeng/aboutCode/FirstDemo/res/layout/pdf_viewer_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="file_explorer"
                 path="/home/wangpeng/aboutCode/FirstDemo/res/layout/file_explorer.xml"
                 qualifiers=""

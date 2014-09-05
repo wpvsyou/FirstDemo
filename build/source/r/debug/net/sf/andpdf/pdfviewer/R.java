@@ -26,6 +26,7 @@ public final class R {
         public static final int btExit=0x7f050006;
         public static final int btShow=0x7f050005;
         public static final int cbAntiAlias=0x7f050004;
+        public static final int div_main=0x7f050008;
         public static final int filename=0x7f050003;
         public static final int icon=0x7f050001;
         public static final int mPath=0x7f050000;
@@ -36,6 +37,7 @@ public final class R {
         public static final int file_explorer=0x7f030000;
         public static final int file_row=0x7f030001;
         public static final int pdf_file_select=0x7f030002;
+        public static final int pdf_viewer_activity=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

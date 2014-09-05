@@ -33,6 +33,11 @@ import com.sun.pdfview.PDFImage;
 import com.sun.pdfview.PDFPage;
 import com.sun.pdfview.PDFPaint;
 
+import net.sf.andpdf.utils.Utils;
+
+import util.DragImageView;
+import util.Util;
+
 
 /**
  * U:\Android\android-sdk-windows-1.5_r1\tools\adb push u:\Android\simple_T.pdf /data/test.pdf
@@ -43,8 +48,6 @@ public class PdfViewerActivity extends Activity {
 
     private static final int STARTPAGE = 1;
     private static final float STARTZOOM = 1.0f;
-
-    private static final String TAG = "PDFVIEWER";
 
     private final static int MEN_NEXT_PAGE = 1;
     private final static int MEN_PREV_PAGE = 2;
@@ -64,15 +67,21 @@ public class PdfViewerActivity extends Activity {
     private Thread backgroundThread;
 
 
+    private DragImageView mDragImageView;
+
     /**
      * Called when the activity is first created.
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.pdf_viewer_activity);
+
+        mDragImageView = (DragImageView) findViewById(R.id.div_main);
 
         if (mGraphView == null) {
             mGraphView = new GraphView(this);
+            mGraphView.setVisibility(View.GONE);
 
             Intent intent = getIntent();
             Log.i(TAG, "" + intent);
@@ -95,8 +104,8 @@ public class PdfViewerActivity extends Activity {
 
             parsePDF(pdffilename, pdfBinary);
 
-            setContentView(mGraphView);
 
+//            setContentView(mGraphView);
             mPage = STARTPAGE;
             mZoom = STARTZOOM;
             startRenderThread(mPage, mZoom);
@@ -339,6 +348,7 @@ public class PdfViewerActivity extends Activity {
 
     }
 
+    private static final String TAG = "Silence.W";
     private void showPage(int page, float zoom) throws Exception {
         long startTime = System.currentTimeMillis();
         try {
@@ -347,13 +357,17 @@ public class PdfViewerActivity extends Activity {
             int maxNum = mPdfFile.getNumPages();
             float wi = mPdfPage.getWidth();
             float hei = mPdfPage.getHeight();
+            Log.d(TAG,"the num is --> " + num + " the maxNum is --> " + maxNum
+                    + " \n the wi is --> " + wi + " the hei is --> " + hei);
             String pageInfo = new File(pdffilename).getName() + " - " + num + "/" + maxNum + ": " + wi + "x" + hei;
             mGraphView.showText(pageInfo);
             Log.i(TAG, pageInfo);
             RectF clip = null;
             // free memory from previous page
             mGraphView.setPageBitmap();
-            mGraphView.mBi = mPdfPage.getImage((int) (wi * zoom), (int) (hei * zoom), clip, true, true);
+            Bitmap bit = mPdfPage.getImage((int) (wi * zoom), (int) (hei * zoom), clip, true, true);
+            mGraphView.mBi = bit;
+            mDragImageView.setImageBitmap(bit);
             mGraphView.uiInvalidate();
         } catch (Throwable e) {
             Log.e(TAG, e.getMessage(), e);
