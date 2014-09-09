@@ -1,9 +1,11 @@
 package util;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.util.FloatMath;
 import android.util.Log;
@@ -13,6 +15,7 @@ import android.widget.ImageView;
 
 public class DragImageView extends ImageView {
 
+    private final static String TAG = "DragImageView";
     private Activity mActivity;
     private int screen_W, screen_H;
     private int bitmap_W, bitmap_H;
@@ -80,6 +83,10 @@ public class DragImageView extends ImageView {
     protected void onLayout(boolean changed, int left, int top, int right,
                             int bottom) {
         super.onLayout(changed, left, top, right, bottom);
+        Log.d(TAG, "the left is --> " + left
+                + "\n the top is --> " + top
+                + "\n the right is --> " + right
+                + "\n the bottom is --> " + bottom);
         if (isInit) {
             start_Top = top;
             start_Left = left;
@@ -129,6 +136,7 @@ public class DragImageView extends ImageView {
 
     }
 
+    @TargetApi(Build.VERSION_CODES.ECLAIR)
     void onPointerDown(MotionEvent event) {
         if (event.getPointerCount() == 2) {
             mode = MODE.ZOOM;
@@ -189,6 +197,7 @@ public class DragImageView extends ImageView {
 
     }
 
+    @TargetApi(Build.VERSION_CODES.ECLAIR)
     float getDistance(MotionEvent event) {
         float x = event.getX(0) - event.getX(1);
         float y = event.getY(0) - event.getY(1);

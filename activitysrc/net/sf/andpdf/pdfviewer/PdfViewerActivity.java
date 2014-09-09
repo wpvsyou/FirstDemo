@@ -135,6 +135,7 @@ public class PdfViewerActivity extends Activity {
                 @Override
                 public void handleMessage(Message msg) {
                     Log.d(TAG, "get msg --> setBitmap ~");
+                    mDragImageView.isInit(true);
                     mDragImageView.setImageBitmap(mB);
                 }
             };
